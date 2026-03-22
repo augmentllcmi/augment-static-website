@@ -82,13 +82,14 @@
     .brand-mark {
       width: 38px;
       height: 38px;
-      border-radius: 12px;
-      display: grid;
-      place-items: center;
-      background: linear-gradient(135deg, var(--accent), var(--accent-2));
-      box-shadow: 0 10px 30px rgba(103, 167, 255, 0.28);
-      font-weight: 800;
-      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .brand-mark svg {
+      width: 100%;
+      height: 100%;
     }
 
     .nav-links {
@@ -467,7 +468,34 @@
   <header class="site-header">
     <div class="container nav">
       <a href="#" class="brand">
-        <div class="brand-mark">A</div>
+        <div class="brand-mark">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="primary-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#67a7ff;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#7b8cff;stop-opacity:1" />
+              </linearGradient>
+              <linearGradient id="accent-gradient" x1="0%" y1="100%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:#77e4c8;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#67a7ff;stop-opacity:1" />
+              </linearGradient>
+            </defs>
+            <path d="M 100 40 L 160 140 L 130 140 L 100 85 L 70 140 L 40 140 Z"
+                  fill="url(#primary-gradient)"
+                  opacity="0.95"/>
+            <rect x="75" y="110" width="50" height="8"
+                  fill="url(#accent-gradient)"
+                  rx="4"/>
+            <path d="M 100 40 L 115 65 L 100 65 Z"
+                  fill="url(#accent-gradient)"
+                  opacity="0.6"/>
+            <circle cx="100" cy="100" r="85"
+                    fill="none"
+                    stroke="url(#primary-gradient)"
+                    stroke-width="1.5"
+                    opacity="0.2"/>
+          </svg>
+        </div>
         <span>Augment</span>
       </a>
 
@@ -485,10 +513,10 @@
       <div class="container hero-grid">
         <div>
           <div class="eyebrow">Cloud Operations • Migrations • Cost Optimization • AI Enablement</div>
-          <h1>Modern cloud strategy with <span>practical AI enablement</span>.</h1>
+          <h1>Enterprise cloud operations with <span>intelligent AI integration</span>.</h1>
           <p class="lead">
-            Augment helps businesses strengthen cloud operations, execute migrations with confidence,
-            reduce unnecessary cloud spend, and identify AI opportunities that drive measurable value.
+            We strengthen cloud infrastructure, execute seamless migrations, optimize spending,
+            and implement AI solutions that deliver measurable business impact.
           </p>
 
           <div class="hero-actions">
@@ -497,18 +525,18 @@
           </div>
 
           <div class="hero-points">
-            <div class="point">Cloud modernization</div>
-            <div class="point">Cost-conscious execution</div>
-            <div class="point">Business-first AI adoption</div>
+            <div class="point">Strategic modernization</div>
+            <div class="point">Proven cost efficiency</div>
+            <div class="point">Results-driven AI</div>
           </div>
         </div>
 
         <aside class="panel hero-card">
-          <div class="kicker">Focused capabilities</div>
-          <h3>Built for teams modernizing operations.</h3>
+          <div class="kicker">Core Capabilities</div>
+          <h3>Engineering excellence for enterprise transformation.</h3>
           <p>
-            From migration planning to cloud financial efficiency and AI readiness,
-            Augment delivers practical support for businesses looking to move faster with less complexity.
+            From strategic planning to execution, we deliver comprehensive cloud and AI solutions
+            that accelerate business outcomes while reducing operational complexity.
           </p>
 
           <div class="stat-grid">
@@ -538,17 +566,17 @@
         <div class="section-head">
           <h2>About Augment</h2>
           <p>
-            A modern technology brand focused on helping businesses operate more effectively across cloud and AI initiatives.
+            Strategic technology partner for enterprise cloud modernization and AI transformation.
           </p>
         </div>
 
         <div class="panel about-card">
           <p>
-            Augment helps organizations modernize cloud environments, improve operational discipline,
-            reduce waste in cloud spending, and adopt AI in ways that are practical and aligned to business goals.
+            We partner with organizations to architect resilient cloud infrastructure, optimize operational efficiency,
+            eliminate wasteful spending, and implement AI solutions aligned with strategic business objectives.
           </p>
           <p>
-            The emphasis is simple: clear execution, lower complexity, and solutions that create real operational impact.
+            Our approach prioritizes clear execution, reduced complexity, and tangible business value.
           </p>
         </div>
       </div>
@@ -559,7 +587,7 @@
         <div class="section-head">
           <h2>Core Services</h2>
           <p>
-            A strong starting set of services for positioning Augment around cloud modernization and AI readiness.
+            Comprehensive solutions for cloud modernization and AI-driven transformation.
           </p>
         </div>
 
@@ -568,8 +596,8 @@
             <div class="icon">☁️</div>
             <h3>Cloud Operations</h3>
             <p>
-              Improve day-to-day cloud operations with better visibility, governance, monitoring,
-              performance management, and operational discipline.
+              Enhance operational excellence through comprehensive visibility, robust governance,
+              proactive monitoring, and performance optimization strategies.
             </p>
           </div>
 
@@ -577,8 +605,8 @@
             <div class="icon">⇄</div>
             <h3>Cloud Migrations</h3>
             <p>
-              Support migration initiatives with planning, execution guidance, and modernization approaches
-              designed to reduce disruption and accelerate adoption.
+              Execute seamless migrations through strategic planning, proven methodologies,
+              and modernization frameworks that minimize disruption while accelerating time-to-value.
             </p>
           </div>
 
@@ -586,8 +614,8 @@
             <div class="icon">💸</div>
             <h3>Cost Optimization</h3>
             <p>
-              Review cloud usage and spending patterns to identify savings opportunities,
-              reduce waste, and improve cost efficiency without sacrificing outcomes.
+              Analyze spending patterns and usage metrics to unlock significant savings,
+              eliminate waste, and maximize ROI without compromising performance or reliability.
             </p>
           </div>
 
@@ -595,8 +623,8 @@
             <div class="icon">✦</div>
             <h3>AI Enablement</h3>
             <p>
-              Identify and implement practical AI use cases that support productivity,
-              automation, better workflows, and measurable business value.
+              Deploy intelligent automation and AI solutions that enhance productivity,
+              streamline workflows, and deliver quantifiable business outcomes.
             </p>
           </div>
         </div>
@@ -608,36 +636,40 @@
         <div class="section-head">
           <h2>Why Augment</h2>
           <p>
-            Positioning that helps your site feel more credible than a generic consulting page.
+            Distinguished by our commitment to pragmatic solutions and measurable results.
           </p>
         </div>
 
         <div class="why-grid">
           <div class="tile">
-            <h3>Practical over theoretical</h3>
+            <h3>Results-Driven Approach</h3>
             <p>
-              Focused on usable solutions, clear priorities, and business outcomes rather than unnecessary complexity.
+              We prioritize actionable solutions and tangible business outcomes over theoretical frameworks,
+              delivering value through clear execution and strategic focus.
             </p>
           </div>
 
           <div class="tile">
-            <h3>Cost-aware modernization</h3>
+            <h3>Financial Discipline</h3>
             <p>
-              Cloud growth should be efficient. Augment emphasizes performance, governance, and spend discipline together.
+              Every modernization initiative balances performance, governance, and cost efficiency,
+              ensuring sustainable growth without unnecessary expenditure.
             </p>
           </div>
 
           <div class="tile">
-            <h3>AI with a business purpose</h3>
+            <h3>Strategic AI Integration</h3>
             <p>
-              AI adoption should solve real problems. The goal is meaningful workflow improvement, not hype.
+              We implement AI solutions that address genuine business challenges,
+              focusing on operational efficiency and measurable productivity gains.
             </p>
           </div>
 
           <div class="tile">
-            <h3>Built for evolving teams</h3>
+            <h3>Enterprise Scalability</h3>
             <p>
-              Well suited for businesses looking to modernize infrastructure, improve operations, and prepare for scale.
+              Our solutions are architected for organizations modernizing infrastructure,
+              optimizing operations, and positioning for sustainable growth.
             </p>
           </div>
         </div>
@@ -650,9 +682,9 @@
           <div class="contact-grid">
             <div class="contact-copy">
               <div class="section-head" style="margin-bottom: 10px;">
-                <h2>Let’s talk</h2>
+                <h2>Let’s Connect</h2>
                 <p>
-                  Start with a short note about your cloud, migration, cost, or AI priorities.
+                  Discuss your cloud strategy, modernization initiatives, or AI transformation goals.
                 </p>
               </div>
 
@@ -662,10 +694,10 @@
               </p>
 
               <ul>
-                <li>Cloud operations and support needs</li>
-                <li>Migration planning or modernization efforts</li>
-                <li>Cloud spend reviews and optimization opportunities</li>
-                <li>AI enablement and workflow improvement ideas</li>
+                <li>Cloud infrastructure assessment and strategy</li>
+                <li>Migration planning and execution support</li>
+                <li>Cost optimization and financial governance</li>
+                <li>AI solution design and implementation</li>
               </ul>
             </div>
 
